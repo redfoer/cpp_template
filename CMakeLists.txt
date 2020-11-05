@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 project(template VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
-
+#
 find_package(Threads REQUIRED)
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
@@ -11,7 +11,7 @@ add_executable(helloworld_cli main.cpp)
 
 add_library(helloworld STATIC lib.cpp)
 
-add_executable(test_version.cpp)
+add_executable(test_version test_version.cpp)
 
 set_target_properties(helloworld_cli helloworld test_version PROPERTIES
         CXX_STANDARD 17
