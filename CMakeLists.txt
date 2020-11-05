@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.5)
 
 project(template VERSION 0.0.$ENV{TRAVIS_BUILD_NUMBER})
 
